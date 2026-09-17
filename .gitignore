@@ -1,0 +1,24 @@
+# Dependencies and generated files
+**/node_modules/
+**/dist/
+coverage/
+.cache/
+*.log
+# Local user data, sessions, credentials and backups
+/data/*
+!/data/.gitkeep
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.key
+*.pem
+.env
+.env.*
+!.env.example
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.code-workspace

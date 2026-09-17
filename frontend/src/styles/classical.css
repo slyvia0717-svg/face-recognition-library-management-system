@@ -1,0 +1,47 @@
+/* Preserve the original ink landscape and reading-animal artwork. */
+:root {
+  --ink: #303a37; --muted: #777a6e; --teal: #426c65; --teal-dark: #2e5049; --paper: #f3eee3; --line: #dcd3bf; --surface: #fffcf4; --cinnabar: #994d3c;
+  --el-color-primary: #426c65; --el-color-primary-light-3: #76938a; --el-color-primary-light-5: #a2b7ac; --el-color-primary-light-7: #d0d9ce; --el-color-primary-light-9: #f0f2e9; --el-color-primary-dark-2: #2e5049;
+}
+body { background: linear-gradient(90deg,#f5f0e8ba,#f5f0e8a8),url('../assets/bcg.jpg') center center / cover fixed; }
+h1,h2,h3,.session-brand,.welcome-brand { font-family: 'Songti SC','STSong','SimSun',serif; }
+h1,h2,h3 { letter-spacing: .06em; font-weight: 600; }
+.eyebrow { letter-spacing: .22em; font-family: 'Songti SC','STSong','SimSun',serif; font-size: 12px; color: var(--cinnabar); }
+.brand-mark { border-radius: 3px; background: var(--cinnabar); border: 2px solid #fff7eaaa; outline: 1px solid #994d3c; outline-offset: 2px; font-family: 'Kaiti SC','STKaiti','KaiTi',serif; }
+.session-bar { background: #fcf8edee; border-bottom: 1px solid #d9ccb5; }
+.session-brand { font-size: 20px; letter-spacing: .1em; }.session-brand small { letter-spacing: .12em; color: #858171; }
+.session-bar button { border-radius: 5px; background: #fbf7ed; border-color: #d8cdb8; }.session-bar .account { color: #6d7164; }
+.original-wordmark { width: 230px; height: auto; margin-left: 5px; }
+.welcome-page { padding-top: 40px; }.welcome-grid { gap: 70px; }
+.welcome-story h1 { font-family: 'Kaiti SC','STKaiti','KaiTi','Songti SC',serif; font-size: clamp(42px,5vw,66px); font-weight: 500; letter-spacing: .06em; line-height: 1.45; }
+.welcome-description { color: #71776d; line-height: 2; font-family: 'Songti SC','STSong','SimSun',serif; font-size: 15px; }
+.welcome-entry,.auth-card { background: #fffcf3eb; border-color: #d6c9af; border-radius: 8px; box-shadow: 0 12px 50px #6359420b,inset 0 0 0 5px #f4eddf; }
+.welcome-entry { position: relative; }.welcome-entry:before,.welcome-entry:after { content: ''; position: absolute; width: 25px; height: 25px; pointer-events: none; border-color: #ad9670; border-style: solid; }
+.welcome-entry:before { top: 12px; left: 12px; border-width: 1px 0 0 1px; }.welcome-entry:after { bottom: 12px; right: 12px; border-width: 0 1px 1px 0; }
+.welcome-entry h2 { letter-spacing: .08em; font-weight: 600; }.entry-badge { background: #f1e6d6; color: #927552; border-radius: 3px; font-family: 'Songti SC','STSong',serif; letter-spacing: .08em; }
+.entry-choice { border-radius: 5px; border-color: #ddd2bc; background: #fffdf8; }.reader-choice { background: var(--teal); border-color: var(--teal); }.entry-choice strong { font-family: 'Songti SC','STSong','SimSun',serif; font-size: 18px; font-weight: 600; letter-spacing: .1em; }.entry-choice small { line-height: 1.6; }.choice-symbol { background: #eeeade; border-radius: 4px; }.reader-choice .choice-symbol { background: #ffffff16; }
+.entry-footer { border-color: #e2d7c1; color: #8e8976; }.entry-register { color: #817d6e; }.welcome-footer { color: #827e70; letter-spacing: .22em; font-family: 'Songti SC','STSong',serif; }
+.classical-illustration { display: flex; align-items: center; gap: 26px; position: relative; width: 390px; max-width: 100%; margin: 32px 0 0; min-height: 230px; }
+.classical-illustration img { width: 210px; height: 230px; object-fit: contain; filter: drop-shadow(0 5px 5px #6159420e); }
+.classical-illustration p { writing-mode: vertical-rl; font-family: 'Kaiti SC','STKaiti','KaiTi',serif; letter-spacing: .2em; line-height: 2; font-size: 17px; color: #657268; margin: 0; }
+.classical-seal { align-self: flex-end; border: 1px solid var(--cinnabar); color: var(--cinnabar); font-family: 'Kaiti SC','STKaiti',serif; writing-mode: vertical-rl; font-size: 14px; padding: 7px 4px; border-radius: 2px; margin-bottom: 24px; }
+.auth-card h1 { letter-spacing: .08em; font-size: 29px; }.auth-brand { font-family: 'Songti SC','STSong',serif; letter-spacing: .08em; }.auth-card .face-login > .el-button { background: #fffaf0; border-color: #d6cbb5; border-radius: 5px; }.auth-form input { background: #fffdf7; border-color: #ddd4c1; border-radius: 5px; }.auth-form > button { border-radius: 5px; }.auth-divider:before,.auth-divider:after { background: #e0d6c0; }.auth-bottom { border-color: #e0d6c0; }
+.workspace-heading h1 { letter-spacing: .08em; font-family: 'Songti SC','STSong','SimSun',serif; font-weight: 600; }.workspace-heading .eyebrow { font-size: 12px; }
+.library-nav { background: #fffaf0f5; border-color: #d8ccb5; border-radius: 9px; box-shadow: 0 8px 30px #5c513f14; }.library-nav a { border-radius: 5px; }.library-nav a.selected { background: #e6ece1; color: var(--teal-dark); }
+.profile-card { border-radius: 8px; border-color: #d6c9b2; background: #fffcf4; box-shadow: 0 5px 24px #645b4608; }
+.profile-top { background: linear-gradient(90deg,#faf6eeda,#faf6ee3b),url('../assets/card.jpg') center center / cover; padding: 26px 30px; min-height: 160px; }
+.profile-avatar { flex: 0 0 94px; width: 94px; height: 94px; border-radius: 50%; border: 1px solid #b9b9a1; padding: 4px; background: #fcf8e5; overflow: hidden; box-shadow: 0 0 0 4px #fffcf477; }
+.profile-avatar img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top; border-radius: 50%; }
+.profile-top h2 { font-family: 'Songti SC','STSong',serif; font-weight: 600; letter-spacing: .04em; }.role-badge { border-radius: 2px; color: #8c5243; background: #f0e1cd; border: 1px solid #dfcbb2; font-family: 'Songti SC','STSong',serif; }
+.profile-field + .profile-field { border-color: #e6ddca; }.profile-fields { background: #fffcf4; }.edit-profile { border-radius: 4px; background: #efeede; }
+.shortcut-grid a { border-radius: 6px; border-color: #dcd1bb; background: #fffcf2ed; }.shortcut-grid span { color: #9b7958; }.shortcut-grid h3 { font-family: 'Songti SC','STSong',serif; font-weight: 600; letter-spacing: .05em; }
+.route-content.is-private .book-item,.route-content.is-private .records,.route-content.is-private .person-item,.statistics-card { background: #fffcf3f2; border-color: #dbcfb7; border-radius: 7px; }
+.route-content.is-private .search-bar input { background: #fffdf6; border-color: #d9ccb5; border-radius: 5px; }.route-content.is-private .search-bar button { background: var(--teal); border-radius: 5px; }
+.route-content.is-private .book-info button { background: #edf0e4; border-color: #cdd3bd; color: #466259; border-radius: 4px; }
+.route-content.is-private .person-photo { width: 66px; height: 66px; border-radius: 50%; object-fit: cover; object-position: center top; padding: 3px; border: 1px solid #cec7ac; background: #f3f0df; }
+.route-content.is-private .face-settings,.route-content.is-private .codes-page { background: #fffcf2f2; border-color: #d8ccb3; border-radius: 8px; }.route-content.is-private .code-card { background: #faf6eb; border-color: #ded2bc; border-radius: 5px; }
+.route-content.is-private .empty-state { background: #fffcf1cf; border-color: #d4c6ac; border-radius: 6px; }
+.route-content.is-private .add-book-button { border-radius: 5px; background: var(--teal); }.statistics-card .metric-grid > div { background: #f0eee0; border-radius: 5px; }.statistics-card .metric-grid strong { color: var(--teal); }
+.el-dialog { background: #fffcf4; border: 1px solid #d7c9af; border-radius: 8px; }.el-dialog__title { font-family: 'Songti SC','STSong',serif; letter-spacing: .06em; }.el-input__wrapper { background: #fffdf6; }.el-button { border-radius: 5px; }
+@media(max-width:760px) { .welcome-grid { gap: 28px; }.welcome-story h1 { font-size: 44px; }.welcome-description { font-size: 13px; }.classical-illustration { min-height: 150px; margin-top: 22px; gap: 22px; }.classical-illustration img { width: 135px; height: 150px; }.classical-illustration p { font-size: 14px; }.classical-seal { font-size: 12px; margin-bottom: 12px; }.profile-top { padding: 22px 24px; gap: 18px; }.profile-avatar { flex-basis: 80px; width: 80px; height: 80px; }.session-brand { font-size: 16px; letter-spacing: .04em; }.session-brand small { font-size: 8px; }.original-wordmark { width: 205px; }.welcome-page { padding-top: 26px; } }
+@media(max-width:420px) { .welcome-story h1 { font-size: 38px; }.profile-avatar { flex-basis: 72px; width: 72px; height: 72px; }.profile-top h2 { font-size: 21px; }.profile-top p { font-size: 11px; }.workspace-heading h1 { font-size: 27px; } }
